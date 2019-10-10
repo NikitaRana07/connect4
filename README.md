@@ -1,7 +1,7 @@
 # Connect4
->2 Player game
->Red and Blue, one color for each player
->Can be played in browser.
+### 2 Player game
+### Red and Blue, one color for each player
+### Can be played in browser.
 ![Screenshot](https://github.com/NikitaRana07/connect4/blob/master/sdtfyg.png)
 
 ## Rules
