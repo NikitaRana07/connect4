@@ -1,8 +1,8 @@
 
-var player1 = prompt("Player One: Enter Your Name , you will be Blue");
+var player1 = prompt("Player One: Enter Your Name , you will be BLUE");
 var player1Color = 'rgb(86, 151, 255)';
 
-var player2 = prompt("Player Two: Enter Your Name, you will be Red");
+var player2 = prompt("Player Two: Enter Your Name, you will be RED");
 var player2Color = 'rgb(237, 45, 73)';
 
 var game_on = true;
@@ -91,7 +91,7 @@ function gameEnd(winningPlayer) {
     for (var row = 0; row < 7; row++) {
       $('h3').fadeOut('fast');
       $('h2').fadeOut('fast');
-      $('h1').text(winningPlayer+" has won! Refresh your browser to play again!").css("fontSize", "50px")
+      $('h1').text(winningPlayer+" has won! Restart to play again!").css("fontSize", "50px")
     }
   }
 }
@@ -100,7 +100,7 @@ var currentPlayer = 1;
 var currentName = player1;
 var currentColor = player1Color;
 
-$('h3').text(player1+": it is your turn, please pick a column to drop your blue chip.");
+$('h3').text(player1+": it is your turn, please pick a column to drop your BLUE chip.");
 
 $('.board button').on('click',function() {
 
@@ -118,11 +118,11 @@ $('.board button').on('click',function() {
 
   if (currentPlayer === 1) {
     currentName = player1;
-    $('h3').text(currentName+": it is your turn, please pick a column to drop your blue chip.");
+    $('h3').text(currentName+": it is your turn, please pick a column to drop your BLUE chip.");
     currentColor = player1Color;
   }else {
     currentName = player2
-    $('h3').text(currentName+": it is your turn, please pick a column to drop your red chip.");
+    $('h3').text(currentName+": it is your turn, please pick a column to drop your RED chip.");
     currentColor = player2Color;
   }
 
